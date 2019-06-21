@@ -1,6 +1,6 @@
 # 简单线性回归模型
 
-## 第一步：数据预处理
+## 第 1 步：数据预处理
 
 ```py
 import pandas as pd
@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, random_state = 0)
 ```
 
-## 第二步：训练集使用简单线性回归模型来训练
+## 第 2 步：训练集使用简单线性回归模型来训练
 
 ```py
 from sklearn.linear_model import LinearRegression
@@ -23,13 +23,13 @@ regressor = LinearRegression()
 regressor = regressor.fit(X_train, Y_train)
 ```
 
-## 第三步：预测结果
+## 第 3 步：预测结果
 
 ```py
 Y_pred = regressor.predict(X_test)
 ```
 
-## 第四步：可视化
+## 第 4 步：可视化
 
 ### 训练集结果可视化
 
